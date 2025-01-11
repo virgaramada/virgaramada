@@ -36,8 +36,8 @@ jobs:
       uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
     - name: Change wrapper permissions on root folder
       run: chmod +x ./gradlew
-    - name: Change wrapper permissions on gradle app
-      run: chmod +x ./MyProjectTest-Gradle/gradlew
+    #- name: Change wrapper permissions on gradle app
+    #  run: chmod +x ./MyProjectTest-Gradle/gradlew
     - name: Build with Gradle Wrapper
      # working-directory: ./MyProjectTest-Gradle
       run: ./gradlew build
