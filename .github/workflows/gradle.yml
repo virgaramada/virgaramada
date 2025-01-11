@@ -58,7 +58,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
+    defaults:
+      run:
+        working-directory: ./MyProjectTest-Gradle
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
