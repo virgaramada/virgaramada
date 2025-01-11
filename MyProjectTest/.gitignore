@@ -1,0 +1,7 @@
+.codiumai
+/target/
+.classpath
+.project
+build/
+target/
+.gradle
