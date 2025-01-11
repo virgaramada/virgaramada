@@ -1,0 +1,11 @@
+org\pelitur\apps\demo\ArticleApplication.class
+org\pelitur\apps\demo\controller\ArticleController.class
+org\pelitur\apps\demo\service\impl\ArticleServiceImpl.class
+org\pelitur\apps\demo\dto\ArticleDto.class
+org\pelitur\apps\demo\model\Article.class
+org\pelitur\apps\Main.class
+org\pelitur\apps\demo\util\DataMapper.class
+org\pelitur\apps\demo\controller\MyErrorController.class
+org\pelitur\apps\demo\service\ArticleService.class
+org\pelitur\apps\demo\response\MyResponse.class
+org\pelitur\apps\demo\repository\ArticleRepository.class
