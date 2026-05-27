@@ -26,6 +26,7 @@
         <!-- <evosuite.plugin.version>1.0.6</evosuite.plugin.version>
         <evosuiteVersion>1.0.6</evosuiteVersion>
         -->
+		<tomcat.embed.core.version>10.1.55</tomcat.embed.core.version>
     </properties>
 	
 	<dependencyManagement>
@@ -121,6 +122,13 @@
             <scope>test</scope>
      </dependency>
      -->
+		
+<dependency>
+  <groupId>org.apache.tomcat.embed</groupId>
+  <artifactId>tomcat-embed-core</artifactId>
+  <version>${tomcat.embed.core.version}</version>
+</dependency>
+		
     </dependencies>
  <build>
      <plugins>
