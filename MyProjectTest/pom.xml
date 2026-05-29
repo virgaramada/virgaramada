@@ -27,6 +27,7 @@
         <evosuiteVersion>1.0.6</evosuiteVersion>
         -->
 		<tomcat.embed.core.version>10.1.55</tomcat.embed.core.version>
+		<maven.dependency.check.version>12.2.2</maven.dependency.check.version>
     </properties>
 	
 	<dependencyManagement>
@@ -123,11 +124,11 @@
      </dependency>
      -->
 		
-<dependency>
-  <groupId>org.apache.tomcat.embed</groupId>
-  <artifactId>tomcat-embed-core</artifactId>
-  <version>${tomcat.embed.core.version}</version>
-</dependency>
+	<dependency>
+	  <groupId>org.apache.tomcat.embed</groupId>
+	  <artifactId>tomcat-embed-core</artifactId>
+	  <version>${tomcat.embed.core.version}</version>
+	</dependency>
 		
     </dependencies>
  <build>
@@ -184,6 +185,22 @@
              </execution></executions>
          </plugin>
          -->
+		 <plugin>
+              <groupId>org.owasp</groupId>
+              <artifactId>dependency-check-maven</artifactId>
+              <version>${maven.dependency.check.version}</version>
+			  <configuration>
+                  <failBuildOnCVSS>8</failBuildOnCVSS>
+				  <skipProvidedScope>true</skipProvidedScope>
+              </configuration>
+              <executions>
+                  <execution>
+                      <goals>
+                          <goal>check</goal>
+                      </goals>
+                  </execution>
+              </executions>
+          </plugin>
      </plugins>
  </build>
 </project>
