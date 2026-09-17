@@ -1,0 +1,3 @@
+id,cif,account_number,subscriber_id,biller_code,status,amount,creation_date,account_name,account_type,version,biller_type,start_effective_date,end_effective_date
+1,1234567890,9012345678,1234567890,TELKOM,ACTIVE,100000,9/16/2026 0:00,Test Test Name,PURCHASE,1,TELKOM,9/16/2026,10/16/2026
+2,1234567891,9012345679,1234567891,TELKOM,ACTIVE,150000,9/16/2026 0:00,Test Test Other,PURCHASE,2,TELKOM,9/16/2026,10/16/2026
